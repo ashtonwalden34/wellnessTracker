@@ -4,14 +4,103 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-label {
-    display: block;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F1EE;
+    margin: 0;
+    padding: 3rem 0;
+    color: #344E41;
 }
 
+main {
+    margin: auto;
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+
+/* switches */
 .hideMe {
     display: none;
 }
 
 .showMe {
     display: block;
+}
+
+h1 {
+    background-color: #6B705C;
+    color: white;
+    margin: 0;
+    padding: 1.8rem;
+    text-align: center;
+}
+
+/* new profile */
+#newProfile {
+    padding: 2rem;
+    background-color: #FFFFFF;
+}
+
+#newProfile label {
+    display: block;
+    margin-bottom: .8rem;
+}
+
+#newProfile input,
+#newProfile select {
+    width: 100%;
+    padding: .7rem;
+    margin-top: .4rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #D6CCC2;
+}
+
+#newProfile input[type="submit"] {
+    background-color: #A5A58D;
+    color: white;
+    border: none;
+    padding: .9rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#newProfile input[type="submit"]:hover {
+    background-color: #6B705C;
+}
+
+/* current profile */
+#myProfile {
+
+    width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: 6B705C;
+}
+
+#myProfile img {
+    width: 70%;
+    margin-bottom: .5rem;
+}
+
+#myProfile button {
+    background-color: #E76F51;
+    color: white;
+    border: none;
+    padding: .6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#myProfile button:hover {
+    background-color: #c8553f;
 }
